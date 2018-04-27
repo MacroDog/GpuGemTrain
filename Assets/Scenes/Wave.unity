@@ -288,8 +288,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaveMateril: {fileID: 2100000, guid: e8d0680dcd9bd1d4c8bddd754e43aed6, type: 2}
-  length: 2
-  Amplitudo: 3
+  length: 0.2
+  Amplitudo: 1
   Direction: {x: 1, y: 1}
   Speed: 3
 --- !u!23 &2046501649

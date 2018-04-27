@@ -3,7 +3,7 @@
 	Properties
 	{
 		_MainTex("RGB",2D) = "white"{}
-		_DirectionX("DirectionX",float) = 1.0
+		_DirectionX("DirectionX",float) = 0
 		_DirectionY("DirectionY",float) = 1.0
 		_Amplitude("Amplitude",float) = 20.0
 		_Length("Lenght",float) = 1.0
@@ -43,9 +43,9 @@
 			};
 
 			v2f vert (appdata v)
-			{
+		 	{
 				v2f o;
-				v.vertex.y += sin(float2(_DirectionX,_DirectionY)*v.vertex.xz*2/_Length + _Amplitude*_Time.w);
+				v.vertex.y += sin(float2(0.3,1)*v.vertex.xz*2/_Length + _Amplitude*_Time.w);
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				float s=cos(float2(_DirectionX,_DirectionY)*v.vertex.xz*2/_Length + _Amplitude*_Time.w);
 				o.binormal = float3(1,0, s);
